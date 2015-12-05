@@ -15,7 +15,7 @@ RUN apt-get update
 RUN apt-get install -y gzip git-core curl python libssl-dev pkg-config build-essential supervisor mysql-client
 
 # Grab the latest Git version
-RUN cd /opt && git clone https://github.com/ether/etherpad-lite.git etherpad
+RUN cd /opt && git clone -b scalable https://github.com/mthoretton/etherpad-lite.git etherpad
 
 # Install node dependencies
 RUN /opt/etherpad/bin/installDeps.sh
