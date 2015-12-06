@@ -12,7 +12,7 @@ MAINTAINER John E. Arnold, iohannes.eduardus.arnold@gmail.com
 
 # Get Etherpad-lite's other dependencies
 RUN apt-get update
-RUN apt-get install -y gzip git-core curl python libssl-dev pkg-config build-essential supervisor mysql-client
+RUN apt-get install -y gzip git-core curl python libssl-dev pkg-config build-essential supervisor mysql-client vim
 
 # Grab the latest Git version
 RUN cd /opt && git clone -b scalable https://github.com/mthoretton/etherpad-lite.git etherpad
